@@ -3,7 +3,10 @@
 #시작 값과 끝 값을 포함한 합을 구해야 합니다.
 
 def sum_in_range(numbers, start, end):
-    return 
+    sum = 0
+    for i in range(start-1, end): 
+        sum += numbers[i]
+    return sum
 
 # 테스트
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
